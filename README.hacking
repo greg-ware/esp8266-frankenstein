@@ -5,11 +5,13 @@ so you're on your own.
 First of all, get the following from your repositories:  
 
 * git
-* make, gcc
+* make, gcc, 
+* autoconf, textinfo, gnu-awk, gnu-libtool
 * flex, bison, gperf
 
 For debian/ubuntu: 
 apt-get install build-essential git flex bison gperf
+apt-get install autoconf textinfo gawk libtool
 
 For Arch: 
 sudo pacman -S git flex bison gperf
