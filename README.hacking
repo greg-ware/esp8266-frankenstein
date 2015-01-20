@@ -2,16 +2,19 @@ This document describes things required to get started with frankenstein develop
 You'll need a PC running some flavor of linux (preferably). Mac OS X, windows (cygwin) are untested, 
 so you're on your own. 
 
+On Windows, from an Ubuntu VM, beware that you cannot build in a shared drive because windows filesystem
+is not case-sensitive. At best you can share the binary output directory.
+
 First of all, get the following from your repositories:  
 
 * git
-* make, gcc, 
-* autoconf, textinfo, gnu-awk, gnu-libtool
+* make, gcc
+* autoconf, textinfo, gnu-awk, gnu-libtool, curses (need to be added when running espressif Ubuntu VM)
 * flex, bison, gperf
 
 For debian/ubuntu: 
 apt-get install build-essential git flex bison gperf
-apt-get install autoconf textinfo gawk libtool
+apt-get install autoconf textinfo gawk libtool libncurses5-dev
 
 For Arch: 
 sudo pacman -S git flex bison gperf
